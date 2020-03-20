@@ -4,8 +4,8 @@ var secondsLeft = 100000
 timer.textContent = "Time left: " + secondsLeft;
 
 // Global scope variables for answer buttons
-var wrongBtn = document.querySelectorAll(".wrong");
-var correctBtn = document.querySelector("#correct");
+var wrongBtns = document.getElementsByClassName("wrongBtn")
+var correctBtn = document.getElementById("correctBtn");
 var message = document.querySelector("#message");
 
 
@@ -19,12 +19,15 @@ setInterval(function () {
     }
 }, 1000)
 
-//Functions for displaying messages "wrong" or "correct"
-function correctMessage() {
-    message.textContent = "Correct!!!"
-    setTimeout(function () { window.location.href = "3quizQuestion2.html" }, 1000);
-
-}
-
 //Onclick event listeners to convey the messages
-correctBtn.addEventListener("click", correctMessage);
+correctBtn.addEventListener("click", function () {
+    message.textContent = "Correct!!!";
+    setTimeout(function () { window.location.href = "3quizQuestion2.html" }, 1000);
+});
+
+for (var i = 0; i < wrongBtns.length; i++) {
+    wrongBtns[i].addEventListener("click", function () {
+        message.textContent = "Wrong...";
+        setTimeout(function () { message.textContent = ""; }, 1000)
+    });
+}
