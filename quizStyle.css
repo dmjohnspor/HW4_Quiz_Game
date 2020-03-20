@@ -1,0 +1,40 @@
+.jumbotron,
+#finalScoreCard,
+#staticInitials,
+#highscoresTitle {
+    text-align: center;
+}
+
+#question1,
+#finalScoreCard {
+    margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+}
+
+.btn-group-vertical{
+margin-left: 40px;
+}
+
+#inputInitials,
+#submitBtn,
+#backBtn,
+#clearBtn {
+    margin: 10px;
+}
+
+#viewHighscores {
+    float: left;
+    margin-left: 10px
+}
+
+#timer {
+    float: right;
+    margin-right: 10px;
+}
+
+#message {
+    text-align: center;
+    text-decoration-line: overline;
+    font-size: x-large;
+}
