@@ -15,14 +15,14 @@ setInterval(function () {
     timer.textContent = "Time left: " + secondsLeft;
 
     if (secondsLeft <= 0) {
-        window.location.href = "6quizEnd.html";
+        location.href = "6quizEnd.html";
     }
 }, 1000)
 
 //Event listeners for the correct answer. Displays "correct" and redirects to next question.
 correctBtn.addEventListener("click", function () {
     message.textContent = "Correct!!!";
-    setTimeout(function () { window.location.href = "4quizQuestion3.html" }, 1000);
+    setTimeout(function () { location.href = "4quizQuestion3.html" }, 1000);
 });
 
 //Event listener for the wrong answer. Displays "wrong" and subtracts 5 seconds off the timer.

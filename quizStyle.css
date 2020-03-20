@@ -38,3 +38,11 @@ margin-left: 40px;
     text-decoration-line: overline;
     font-size: x-large;
 }
+
+.listedInitial {
+    color: black;
+    background-color: pink;
+    max-width: 500px;
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
