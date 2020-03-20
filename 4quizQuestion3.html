@@ -18,14 +18,14 @@
 
 <body>
     <!-- Link to view highscores -->
-    <a href="" id="viewHighscores">View highscores</a>
+    <a href="7viewHighscores.html" id="viewHighscores">View highscores</a>
 
     <!-- Timer -->
     <span id="timer">Time left:</span>
 
     <!-- Card with the question -->
     <div class="text-center">
-        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;" id="question1">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;" id="question">
             <div class="card-header">Question 3</div>
             <div class="card-body">
                 <h5 class="card-title">What did the Greek gods eat and drink?</h5>
@@ -35,15 +35,17 @@
 
         <!-- Buttons with the possible asnwers -->
         <div class="btn-group-vertical">
-            <button type="button" class="btn btn-danger" class="answer">Wine and feta cheese</button>
+            <button type="button" class="btn btn-danger answer wrongBtn">Wine and feta cheese</button>
             <br>
-            <button type="button" class="btn btn-danger" class="answer">Water and greek yogurt</button>
+            <button type="button" class="btn btn-danger answer wrongBtn">Water and greek yogurt</button>
             <br>
-            <button type="button" class="btn btn-danger" class="answer">Pizza and beer</button>
+            <button type="button" class="btn btn-danger answer wrongBtn">Pizza and beer</button>
             <br>
-            <button type="button" class="btn btn-danger" class="answer">Nectar and ambrosia</button>
+            <button type="button" class="btn btn-danger answer" id="correctBtn">Nectar and ambrosia</button>
         </div>
     </div>
+    <br>
+    <div id="message"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -56,6 +58,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- My custom JS file -->
+    <script src="quizScript_q3.js"></script>
 </body>
 
 </html>

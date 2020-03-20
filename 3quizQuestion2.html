@@ -18,14 +18,14 @@
 
 <body>
     <!-- Link to view highscores -->
-    <a href="" id="viewHighscores">View highscores</a>
+    <a href="7viewHighscores.html" id="viewHighscores">View highscores</a>
 
     <!-- Timer -->
     <span id="timer">Time left:</span>
 
     <!-- Card with the question -->
     <div class="text-center">
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;" id="question1">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;" id="question">
             <div class="card-header">Question 2</div>
             <div class="card-body">
                 <h5 class="card-title">Who was the king of the Greek gods?</h5>
@@ -35,15 +35,17 @@
 
         <!-- Buttons with the possible asnwers -->
         <div class="btn-group-vertical">
-            <button type="button" class="btn btn-success" class="answer">Zeus</button>
+            <button type="button" class="btn btn-success answer" id="correctBtn">Zeus</button>
             <br>
-            <button type="button" class="btn btn-success" class="answer">Poseidon</button>
+            <button type="button" class="btn btn-success answer wrongBtn">Poseidon</button>
             <br>
-            <button type="button" class="btn btn-success" class="answer">Hades</button>
+            <button type="button" class="btn btn-success answer wrongBtn">Hades</button>
             <br>
-            <button type="button" class="btn btn-success" class="answer">King Midas</button>
+            <button type="button" class="btn btn-success answer wrongBtn">King Midas</button>
         </div>
     </div>
+    <br>
+    <div id="message"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -56,6 +58,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- My custom JS file -->
+    <script src="quizScript_q2.js"></script>
 </body>
 
 </html>
