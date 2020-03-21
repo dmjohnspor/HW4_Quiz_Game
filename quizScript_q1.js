@@ -22,7 +22,8 @@ setInterval(function () {
 //Event listeners for the correct answer. Displays "correct" and redirects to next question.
 correctBtn.addEventListener("click", function () {
     message.textContent = "Correct!!!";
-    setTimeout(function () { location.href = "3quizQuestion2.html" }, 1000);
+    localStorage.setItem("seconds", secondsLeft);
+    setTimeout(function () { location.href = "3quizQuestion2.html" }, 500);
 });
 
 //Event listener for the wrong answer. Displays "wrong" and subtracts 5 seconds off the timer.
@@ -30,7 +31,7 @@ for (var i = 0; i < wrongBtns.length; i++) {
     wrongBtns[i].addEventListener("click", function () {
         secondsLeft -= 5;
         message.textContent = "Wrong...";
-        setTimeout(function () { message.textContent = ""; }, 1000)
+        setTimeout(function () { message.textContent = ""; }, 500)
     });
 }
 

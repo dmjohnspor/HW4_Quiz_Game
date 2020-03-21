@@ -1,6 +1,6 @@
 // Global scope variables for timer
 var timer = document.getElementById("timer");
-var secondsLeft = 75;
+var secondsLeft = localStorage.getItem("seconds");
 timer.textContent = "Time left: " + secondsLeft;
 
 // Global scope variables for answer buttons
@@ -22,7 +22,8 @@ setInterval(function () {
 //Event listeners for the correct answer. Displays "correct" and redirects to next question.
 correctBtn.addEventListener("click", function () {
     message.textContent = "Correct!!!";
-    setTimeout(function () { location.href = "4quizQuestion3.html" }, 1000);
+    localStorage.setItem("seconds", secondsLeft);
+    setTimeout(function () { location.href = "4quizQuestion3.html" }, 500);
 });
 
 //Event listener for the wrong answer. Displays "wrong" and subtracts 5 seconds off the timer.
