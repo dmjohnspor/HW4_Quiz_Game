@@ -15,6 +15,8 @@ submitBtn.addEventListener("click", function () {
     var initials = document.getElementById("inputInitials").value;
     localStorage.setItem("initials", initials);
 
-    location.href = "7Highscores.html"
+    if (initials === "") { alert("Please submit your initials") };
+
+    location.replace("7Highscores.html")
 })
 
