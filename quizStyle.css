@@ -39,9 +39,9 @@ margin-left: 40px;
     font-size: x-large;
 }
 
-.listedScore {
+.li {
     color: black;
-    background-color: pink;
+    background-color: aqua;
     max-width: 500px;
     margin-left: 400px;
     margin-bottom: 20px;
