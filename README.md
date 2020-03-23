@@ -16,7 +16,7 @@ Here is a sample of the 3 screens this portfolio consists of:
 ![](assets/image_2.jpg)
 ![](assets/image_3.jpg)
 
-**You can also access the portfolio by clicking [here](https://dmjohnspor.github.io/greek_gods_quiz/).**
+**You can also access the game by clicking [here](https://dmjohnspor.github.io/greek_gods_quiz/).**
 
 ## Built With
 
